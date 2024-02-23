@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nomad\\source\\repos\\SIstemaDeTarefas\\SIstemaDeTarefas\\SistemaDeTarefas.csproj": {}
+    "C:\\Users\\nomad\\Documentos\\GitHub\\dti-dev-estagio\\SIstemaDeTarefas\\SistemaDeTarefas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nomad\\source\\repos\\SIstemaDeTarefas\\SIstemaDeTarefas\\SistemaDeTarefas.csproj": {
+    "C:\\Users\\nomad\\Documentos\\GitHub\\dti-dev-estagio\\SIstemaDeTarefas\\SistemaDeTarefas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nomad\\source\\repos\\SIstemaDeTarefas\\SIstemaDeTarefas\\SistemaDeTarefas.csproj",
+        "projectUniqueName": "C:\\Users\\nomad\\Documentos\\GitHub\\dti-dev-estagio\\SIstemaDeTarefas\\SistemaDeTarefas.csproj",
         "projectName": "SistemaDeTarefas",
-        "projectPath": "C:\\Users\\nomad\\source\\repos\\SIstemaDeTarefas\\SIstemaDeTarefas\\SistemaDeTarefas.csproj",
+        "projectPath": "C:\\Users\\nomad\\Documentos\\GitHub\\dti-dev-estagio\\SIstemaDeTarefas\\SistemaDeTarefas.csproj",
         "packagesPath": "C:\\Users\\nomad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nomad\\source\\repos\\SIstemaDeTarefas\\SIstemaDeTarefas\\obj\\",
+        "outputPath": "C:\\Users\\nomad\\Documentos\\GitHub\\dti-dev-estagio\\SIstemaDeTarefas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

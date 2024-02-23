@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "H2HFmM2jQZmMuog9jZvI/zLgzpgXooXUaxRsj4mJUehjqZpucC3WnauvO5QJrWRTClHlsR+3tJ1cYukWnrPLjQ==",
+  "dgSpecHash": "VYW3wexTWVmIFZtNn4ZUYugcpLGnqKHpFNbY9cwFT83iDERdZBjltcB1MOXThInZHE9ZZUvlSJBBe44osJc2eA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nomad\\source\\repos\\SIstemaDeTarefas\\SIstemaDeTarefas\\SistemaDeTarefas.csproj",
+  "projectFilePath": "C:\\Users\\nomad\\Documentos\\GitHub\\dti-dev-estagio\\SIstemaDeTarefas\\SistemaDeTarefas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nomad\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nomad\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
