@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "SIstemaDeTarefas.Controllers.TarefaController",
-    "Method": "BuscarTodasTarefas",
-    "RelativePath": "api/Tarefa",
+    "ContainingType": "TaskSystem.Controllers.TaskController",
+    "Method": "GetAllTasks",
+    "RelativePath": "api/Task",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[SIstemaDeTarefas.Models.TarefaModel, SistemaDeTarefas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[TaskSystem.Models.TaskModel, TaskSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -20,22 +20,22 @@
     ]
   },
   {
-    "ContainingType": "SIstemaDeTarefas.Controllers.TarefaController",
-    "Method": "AdicionarTarefa",
-    "RelativePath": "api/Tarefa",
+    "ContainingType": "TaskSystem.Controllers.TaskController",
+    "Method": "AddTask",
+    "RelativePath": "api/Task",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "tarefa",
-        "Type": "SIstemaDeTarefas.Models.TarefaModel",
+        "Name": "task",
+        "Type": "TaskSystem.Models.TaskModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "SIstemaDeTarefas.Models.TarefaModel",
+        "Type": "TaskSystem.Models.TaskModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -46,9 +46,9 @@
     ]
   },
   {
-    "ContainingType": "SIstemaDeTarefas.Controllers.TarefaController",
-    "Method": "BuscarTarefaPorId",
-    "RelativePath": "api/Tarefa/{id}",
+    "ContainingType": "TaskSystem.Controllers.TaskController",
+    "Method": "GetTaskById",
+    "RelativePath": "api/Task/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "SIstemaDeTarefas.Models.TarefaModel",
+        "Type": "TaskSystem.Models.TaskModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -72,9 +72,9 @@
     ]
   },
   {
-    "ContainingType": "SIstemaDeTarefas.Controllers.TarefaController",
-    "Method": "DeletarTarefa",
-    "RelativePath": "api/Tarefa/{id}",
+    "ContainingType": "TaskSystem.Controllers.TaskController",
+    "Method": "DeleteTask",
+    "RelativePath": "api/Task/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -85,16 +85,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

@@ -1,4 +1,3 @@
-import React from 'react';
 import TaskItem from './TaskItem';
 import styles from './TaskList.module.css';
 
@@ -8,7 +7,7 @@ function TaskList({ tasks, onDeleteTask }) {
         return new Date(dateString).toLocaleDateString('pt-BR', options);
     }
 
-    // Agrupando tarefas por data
+    // Agrupando Tasks por data
     const tasksPorData = tasks.reduce((acc, task) => {
         (acc[task.data] = acc[task.data] || []).push(task);
         return acc;

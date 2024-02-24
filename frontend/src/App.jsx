@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
@@ -9,7 +9,7 @@ function App() {
 
     useEffect(() => {
         fetchTasks();
-    }, []); // Isso garante que fetchTasks seja chamado apenas na montagem do componente
+    }, []);
 
 
     const fetchTasks = async () => {
@@ -25,9 +25,7 @@ function App() {
         try {
             const response = await axios.post('http://localhost:5042/api/tarefa', newTask);
             if (response.status === 201) {
-                // Assume que a resposta da API inclui a tarefa criada
                 const createdTask = response.data;
-                // Atualiza o estado para incluir a nova tarefa
                 setTasks(prevTasks => [...prevTasks, createdTask]);
             }
         } catch (error) {
@@ -40,7 +38,6 @@ function App() {
         try {
             const response = await axios.delete(`http://localhost:5042/api/tarefa/${id}`);
             if (response.status === 200) {
-                // Atualize a lista de tarefas filtrando a tarefa excluída sem precisar recarregar
                 setTasks(tasks.filter(task => task.id !== id));
             }
         } catch (error) {
@@ -52,6 +49,7 @@ function App() {
         <div className={styles.appContainer}>
             <h1>Novo lembrete</h1>
             <TaskForm onAddTask={addTask} />
+
             <h1>Lista de lembretes</h1>
             <TaskList tasks={tasks} onDeleteTask={deleteTask} />
         </div>

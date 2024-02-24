@@ -1,0 +1,19 @@
+# Arquivos Binários e de Objeto
+bin/
+obj/
+
+# Arquivos de Configuração Sensíveis
+appsettings*.json
+
+# Pastas e Arquivos do Visual Studio
+.vs/
+*.user
+*.userosscache
+*.suo
+
+# Dependências do Node.js
+node_modules/
+
+# Outros arquivos e pastas comuns a serem ignorados
+*.log
+*.vscode/
