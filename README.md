@@ -1,5 +1,7 @@
 ## DTI Digital: Teste prático
 
+![dti-digital](https://github.com/daviferreiradev/dti-teste-pratico/assets/123561984/e88c08bc-d988-4780-95cb-c9b91dfcb7c6)
+
 ### Objetivo do Projeto 🚀
 
 O objetivo deste projeto é desenvolver um aplicativo de lembretes (tasks) onde os usuários podem adicionar, visualizar e excluir tarefas.
