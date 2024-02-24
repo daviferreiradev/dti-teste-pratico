@@ -6,6 +6,8 @@
 
 O objetivo deste projeto é desenvolver um aplicativo de lembretes (tasks) onde os usuários podem adicionar, visualizar e excluir tarefas.
 
+![image](https://github.com/daviferreiradev/dti-teste-pratico/assets/123561984/2e611f72-9454-40d5-bb2f-53e96ce5588c)
+
 ### Requisitos para Rodar o Projeto 🛠️
 
 #### Setup de Ambiente / Dependências Necessárias
@@ -55,7 +57,9 @@ O objetivo deste projeto é desenvolver um aplicativo de lembretes (tasks) onde 
 #### Frontend
 
 - Linguagem: JavaScript (com uso do framework React)
+- Build e Desenvolvimento: Vite
 - Gerenciador de Pacotes: npm
+- Estilização: SCSS com pré-processador Sass e pós-processador PostCSS
 - Testes: Jest, React Testing Library
 
 ### Como se Localizar no Projeto? 🗺️
