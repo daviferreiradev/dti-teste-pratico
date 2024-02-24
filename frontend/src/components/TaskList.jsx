@@ -9,7 +9,7 @@ function TaskList({ tasks, onDeleteTask }) {
 
     // Agrupando Tasks por data
     const tasksPorData = tasks.reduce((acc, task) => {
-        (acc[task.data] = acc[task.data] || []).push(task);
+        (acc[task.date] = acc[task.date] || []).push(task);
         return acc;
     }, {});
 
@@ -18,11 +18,11 @@ function TaskList({ tasks, onDeleteTask }) {
 
     return (
         <div>
-            {datasOrdenadas.map((data) => (
-                <div key={data}>
-                    <h2>{formatDate(data)}</h2>
+            {datasOrdenadas.map((date) => (
+                <div key={date}>
+                    <h2>{formatDate(date)}</h2>
                     <ul className={styles.taskList}>
-                        {tasksPorData[data].map((task) => (
+                        {tasksPorData[date].map((task) => (
                             <TaskItem key={task.id} task={task} onDeleteTask={onDeleteTask} />
                         ))}
                     </ul>

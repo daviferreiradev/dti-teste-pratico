@@ -14,7 +14,7 @@ function App() {
 
     const fetchTasks = async () => {
         try {
-            const response = await axios.get('http://localhost:5042/api/tarefa');
+            const response = await axios.get('http://localhost:5042/api/Task');
             setTasks(response.data);
         } catch (error) {
             console.error("Erro ao buscar tasks:", error);
@@ -23,7 +23,7 @@ function App() {
 
     const addTask = async (newTask) => {
         try {
-            const response = await axios.post('http://localhost:5042/api/tarefa', newTask);
+            const response = await axios.post('http://localhost:5042/api/Task', newTask);
             if (response.status === 201) {
                 const createdTask = response.data;
                 setTasks(prevTasks => [...prevTasks, createdTask]);
@@ -36,8 +36,8 @@ function App() {
 
     const deleteTask = async (id) => {
         try {
-            const response = await axios.delete(`http://localhost:5042/api/tarefa/${id}`);
-            if (response.status === 200) {
+            const response = await axios.delete(`http://localhost:5042/api/Task/${id}`);
+            if (response.status === 204) {
                 setTasks(tasks.filter(task => task.id !== id));
             }
         } catch (error) {

@@ -20,7 +20,7 @@ namespace TaskSystem
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   policy =>
                                   {
-                                      policy.WithOrigins("http://localhost:5173")
+                                      policy.WithOrigins("http://localhost:5175")
                                         .AllowAnyMethod()
                                         .AllowAnyHeader();
                                   });

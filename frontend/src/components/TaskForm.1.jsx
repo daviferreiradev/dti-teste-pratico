@@ -1,7 +1,7 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import styles from './TaskForm.module.css';
 
-function TaskForm({ onAddTask }) {
+export function TaskForm({ onAddTask }) {
     const [name, setName] = useState('');
     const [date, setDate] = useState('');
 
@@ -35,18 +35,14 @@ function TaskForm({ onAddTask }) {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className={styles.inputField}
-            />
+                className={styles.inputField} />
             <input
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
                 required
-                className={styles.inputField}
-            />
+                className={styles.inputField} />
             <button type="submit" className={styles.submitButton}>Criar</button>
         </form>
     );
 }
-
-export default TaskForm;
