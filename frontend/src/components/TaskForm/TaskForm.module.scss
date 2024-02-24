@@ -1,0 +1,46 @@
+$button-padding: 12px 32px;
+$button-bg-color: #AFCB38;
+$button-hover-bg-color: #9BB42F;
+$button-active-bg-color: #869C26;
+$input-focus-border-color: #007bff;
+$input-focus-box-shadow-color: rgba(0, 123, 255, .25);
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.inputField, .submitButton {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    &:focus
+
+{
+    outline: none;
+    border-color: $input-focus-border-color;
+    box-shadow: 0 0 0 2px $input-focus-box-shadow-color;
+}
+
+}
+
+.submitButton {
+    background-color: $button-bg-color;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: $button-padding;
+    margin-bottom: 2rem;
+    &:hover
+
+{
+    background-color: $button-hover-bg-color;
+}
+
+&:active {
+    background-color: $button-active-bg-color;
+}
+}

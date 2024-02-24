@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using TaskSystem.Models;
 using TaskSystem.Repositories.Interfaces;
+using TaskSystem.Services.Interfaces;
 
 namespace TaskSystem.Services
 {
-    public class TaskService
+    public class TaskService : ITaskService
     {
         private readonly ITaskRepository _taskRepository;
 
@@ -40,7 +41,7 @@ namespace TaskSystem.Services
         public async Task<List<TaskModel>> GetAllTasksAsync()
         {
             var tasks = await _taskRepository.GetAllTasks();
-            tasks.Sort((x, y) => DateTime.Compare(x.Date, y.Date)); // Ordena por data
+            tasks.Sort((x, y) => DateTime.Compare(x.Date, y.Date));
             return tasks;
         }
     }

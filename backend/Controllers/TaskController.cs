@@ -3,6 +3,7 @@ using TaskSystem.Models;
 using TaskSystem.Services;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using TaskSystem.Services.Interfaces;
 
 namespace TaskSystem.Controllers
 {
@@ -10,9 +11,9 @@ namespace TaskSystem.Controllers
     [ApiController]
     public class TaskController : ControllerBase
     {
-        private readonly TaskService _taskService;
+        private readonly ITaskService _taskService;
 
-        public TaskController(TaskService taskService)
+        public TaskController(ITaskService taskService)
         {
             _taskService = taskService;
         }

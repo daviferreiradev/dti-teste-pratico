@@ -26,7 +26,7 @@ public class AddTaskAsyncTests
     [Fact]
     public async Task AddTaskAsync_InvalidName_ThrowsArgumentException()
     {
-        var service = new TaskService(null); // No need to setup repo for this test
+        var service = new TaskService(null);
 
         var task = new TaskModel { Name = "", Date = DateTime.Now.AddDays(1) };
 

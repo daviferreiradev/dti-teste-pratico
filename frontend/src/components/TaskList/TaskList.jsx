@@ -1,5 +1,7 @@
-import TaskItem from './TaskItem';
-import styles from './TaskList.module.css';
+import React from 'react';
+import TaskItem from '../TaskItem/TaskItem';
+import styles from './TaskList.module.scss';
+import PropTypes from 'prop-types';
 
 function TaskList({ tasks, onDeleteTask }) {
     function formatDate(dateString) {
@@ -7,13 +9,11 @@ function TaskList({ tasks, onDeleteTask }) {
         return new Date(dateString).toLocaleDateString('pt-BR', options);
     }
 
-    // Agrupando Tasks por data
     const tasksPorData = tasks.reduce((acc, task) => {
         (acc[task.date] = acc[task.date] || []).push(task);
         return acc;
     }, {});
 
-    // Ordenando as datas
     const datasOrdenadas = Object.keys(tasksPorData).sort();
 
     return (
@@ -31,5 +31,10 @@ function TaskList({ tasks, onDeleteTask }) {
         </div>
     );
 }
+
+TaskList.propTypes = {
+    tasks: PropTypes.array.isRequired,
+    onDeleteTask: PropTypes.func.isRequired,
+};
 
 export default TaskList;

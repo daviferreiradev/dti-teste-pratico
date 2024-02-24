@@ -4,6 +4,7 @@ using TaskSystem.Repositories;
 using TaskSystem.Data;
 using TaskSystem.Repositories.Interfaces;
 using TaskSystem.Services;
+using TaskSystem.Services.Interfaces;
 
 namespace TaskSystem
 {
@@ -20,7 +21,7 @@ namespace TaskSystem
                 options.AddPolicy(name: MyAllowSpecificOrigins,
                                   policy =>
                                   {
-                                      policy.WithOrigins("http://localhost:5175")
+                                      policy.AllowAnyOrigin()
                                         .AllowAnyMethod()
                                         .AllowAnyHeader();
                                   });
@@ -39,7 +40,7 @@ namespace TaskSystem
                 );
 
             builder.Services.AddScoped<ITaskRepository, TaskRepository>();
-            builder.Services.AddScoped<TaskService>();
+            builder.Services.AddScoped<ITaskService, TaskService>(); // Corrigido
 
             var app = builder.Build();
 

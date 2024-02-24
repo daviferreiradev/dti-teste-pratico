@@ -1,7 +1,8 @@
-﻿import { useState } from 'react';
-import styles from './TaskForm.module.css';
+import React,{ useState } from 'react';
+import PropTypes from 'prop-types';
+import styles from './TaskForm.module.scss';
 
-export function TaskForm({ onAddTask }) {
+function TaskForm({ onAddTask }) {
     const [name, setName] = useState('');
     const [date, setDate] = useState('');
 
@@ -35,14 +36,23 @@ export function TaskForm({ onAddTask }) {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
-                className={styles.inputField} />
+                className={styles.inputField}
+            />
             <input
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
                 required
-                className={styles.inputField} />
+                className={styles.inputField}
+                data-testid="task-date"
+            />
             <button type="submit" className={styles.submitButton}>Criar</button>
         </form>
     );
 }
+
+TaskForm.propTypes = {
+    onAddTask: PropTypes.func.isRequired,
+};
+
+export default TaskForm;
