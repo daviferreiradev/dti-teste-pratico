@@ -12,7 +12,6 @@ public class TaskServiceTests
     [Fact]
     public async Task GetAllTasksAsync_ReturnsSortedTasks()
     {
-        // Arrange
         var mockRepo = new Mock<ITaskRepository>();
         var tasks = new List<TaskModel>
         {
@@ -23,10 +22,8 @@ public class TaskServiceTests
 
         var service = new TaskService(mockRepo.Object);
 
-        // Act
         var result = await service.GetAllTasksAsync();
 
-        // Assert
         Assert.True(result[0].Date < result[1].Date, "Os tasks devem estar ordenados por data");
     }
 }

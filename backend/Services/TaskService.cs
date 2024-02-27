@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using TaskSystem.Models;
 using TaskSystem.Repositories.Interfaces;
 using TaskSystem.Services.Interfaces;
@@ -16,7 +13,6 @@ namespace TaskSystem.Services
             _taskRepository = taskRepository;
         }
 
-        /*FindTaskByIdAsync*/
         public async Task<TaskModel> FindTaskByIdAsync(int id)
         {
             return await _taskRepository.FindTaskById(id);

@@ -27,10 +27,7 @@ namespace TaskSystem
                                   });
             });
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -40,11 +37,10 @@ namespace TaskSystem
                 );
 
             builder.Services.AddScoped<ITaskRepository, TaskRepository>();
-            builder.Services.AddScoped<ITaskService, TaskService>(); // Corrigido
+            builder.Services.AddScoped<ITaskService, TaskService>();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

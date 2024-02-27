@@ -1,19 +1,75 @@
-# Arquivos Bin�rios e de Objeto
-bin/
-obj/
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Arquivos de Configura��o Sens�veis
+# Node modules e diretórios de distribuição
+node_modules/
+dist/
+dist-ssr/
+build/ # Adicionado para cobrir possíveis diretórios de build do React/Vite
+
+# Arquivos temporários e locais
+*.local
+*.tmp
+*.temp
+
+# Editor directories and files
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Arquivos e pastas de configuração sensíveis
 appsettings*.json
 
-# Pastas e Arquivos do Visual Studio
+# Pastas e Arquivos do Visual Studio e arquivos binários/objeto
 .vs/
+bin/
+obj/
 *.user
 *.userosscache
 *.suo
 
-# Depend�ncias do Node.js
-node_modules/
+# Dependências
+/paket.lock
+project.lock.json
+project.fragment.lock.json
+*.paket.cache
+paket-files/
 
-# Outros arquivos e pastas comuns a serem ignorados
+# Cobertura de testes
+coverage/
+frontend/coverage/
+
+# Arquivos específicos do React e Vite que não devem ser versionados
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos e pastas comuns a serem ignorados
 *.log
 *.vscode/
+*.log*
+.DS_Store
+
+# Específicos do xUnit
+*.trx
+*.xml
+
+# Específicos para aplicações .NET
+**/bin/
+**/obj/
+*.userprefs
+*.csproj.user
+*.dbmdl
+*.jfm
+*.jfmc
