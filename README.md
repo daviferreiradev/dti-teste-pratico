@@ -26,6 +26,7 @@ O objetivo deste projeto é desenvolver um aplicativo de lembretes (tasks) onde 
 3. Configure a string de conexão com o banco de dados no arquivo `appsettings.json`
 4. Execute as migrações do banco de dados: `dotnet ef database update`
 5. Execute o projeto: `dotnet run`
+6. Configure a string de conexão do banco de dados em `appsettings.json`. Substitua `sa` e `root` pelos seus valores reais para a conexão do banco de dados.
 
 #### Frontend
 
