@@ -1,0 +1,31 @@
+# Arquivos de configuração do IDE e binários
+.vs/
+bin/
+obj/
+
+# Arquivos de configuração sensíveis
+appsettings.json
+appsettings.*.json
+
+# Pastas de compilação e pacotes
+[Bb]in/
+[Oo]bj/
+packages/
+
+# Migrations
+Migrations/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de log
+[Ll]ogs/
+*.log
+
+# Arquivos e pastas específicos do usuário
+*.user
+*.userosscache
+
+# Arquivos de saída
+publish/
